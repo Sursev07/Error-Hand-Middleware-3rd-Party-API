@@ -1,0 +1,25 @@
+1. error Handler middleware 
+err, req, res, next
+
+err => populate error nya
+statuscode res.status(400)
+errorcode(bukan message yang untuk ditampilkan langsung di front end)
+message (optional, biasanya si front end bikin lagi message nya) kalau memang mau detail noprob
+
+routes , errorHandler => app.js
+
+3rd party API => api pihak ketiga 
+- code hal yang sama
+- efisiensi waktu, source
+- daftarin aplikasi kita => API key => identitas aplikasi kita dibikinin sama 3rdparty nya
+- baca dokumentasi nya
+
+- axios untuk akses 3rdparty install di backend, axios package
+GET axios
+axios.get(url, ...)
+axios({
+    method:'GET',
+    url:'',
+    params: {},
+    body:
+})
